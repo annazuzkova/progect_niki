@@ -1,0 +1,192 @@
+/* стилі хедеру */
+.header{
+    background-color:  #012D63;;
+    color: #C7C7C7;
+    font-weight: 300;
+    justify-content: center;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1107px;
+    height: 60px;
+    margin-left: 165px;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+}
+.nav-list li:hover{
+    font-weight: 400;
+    color: #FFF;
+    
+}
+.nav-languich a:hover{
+    color:#FFFFFF ;
+}
+/* main */
+.home{
+    background-image: url(/src/images/cross.png);
+    height: 858px;
+    background-size: cover;
+}
+.home-container{
+    width: 640px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 164px;
+    margin-bottom: 183px;
+}
+.home-title{
+    font-size: 144px;
+    font-weight: 400;
+}
+.home-title::before{
+    content: 'С&R';
+    display: flex;
+    width: 178px;
+    height: 86px;
+    font-family: PT Serif;
+    font-size: 48px;
+    font-weight: 400;
+    background-image: url(/src/images/logo.png);
+    background-repeat: no-repeat;
+}
+.home-title2{
+    font-size: 72px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+.home-text{
+    font-size: 18px;
+    font-weight: 400;
+    width: 508px;
+    height: 84px;
+    margin-bottom: 61px;
+}
+.btn{
+    display: flex;
+    width: 254px;
+    height: 67px;
+    border-radius: 10px;
+    background-color: #8E32C6;
+    justify-content: center;
+    align-items: center;
+}
+/* друга секція */
+.advantages{
+    display: flex;
+    height: 606px;
+    justify-content: center;
+    align-items: center;
+    background-color: #012D63;
+}
+.advantages-container{
+    display: flex;
+    gap: 145px;
+    width: 1110px;
+    height: 396px;
+    flex-direction: row;
+    background-color: #012D63;  
+    border: solid;
+    border-color: #8E32C6;
+    border-width: 5px;
+}
+.card-adv{
+    font-size: 36px;
+    text-align: center;
+}
+.photo-card{
+    width: 240px;
+    height: 240px;
+}
+.advantages-container:nth-child(1){
+    margin-left: 50px;
+}
+.advantages-container:nth-child(3){
+    margin-right: 50px;
+}
+/* третя секція */
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: #012D63;
+    height: 520px;
+    border: solid;
+    border-width: 2px;
+    border-color: #FFF;
+}
+.reviews-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 93px;
+}
+.card-rev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 15px;
+    width: 255px;
+    height: 292px;
+    padding: 49px 14px 29px 14px;
+    margin-bottom: 114px;
+}
+.card-rev-1{
+    background: linear-gradient(135deg, #00E5E6 7.29%, #00A8F7 26.04%, #9A76F9 62.50%, #CC5EC2 100%);
+    box-shadow: 0px 14px 0px -5px #7B54B2, 0px 30px 0px -13px #533978;
+}
+.card-rev-2{
+    background: linear-gradient(135deg, #FF68B4 0%, #FF45E1 26.04%, #CE3AFF 62.84%, #8961FF 100%);
+    box-shadow:  0px 14px 0px -5px #9159B1,0px 30px 0px -13px #61337C;
+}
+.card-rev-3{
+    background: linear-gradient(135deg, #FFE128 0%, #FF9B5C 30.21%, #FF8381 63.29%, #FF5489 100%);
+    box-shadow: 0px 14px 0px -5px #B95A4C,0px 30px 0px -13px #732F26;
+}
+.rev-text{
+    width: 228px;
+    margin-bottom: 8px;
+}
+.rev-date{
+    font-size: 14px;
+    color: #D8D8D8;
+    margin-bottom: 47px;
+}
+.name{
+    font-size: 14px;
+    margin-bottom: 1px;
+}
+.with_us{
+    font-size: 12px;
+    color: #D8D8D8;
+}
+.people::before{
+    content: '';
+    display: block;
+    width: 31px;
+    height: 31px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.people1::before{
+    content: '';
+    background-image: url(/src/images/Ellipse\ 17.png);
+}
+.people2::before{
+    content: '';
+    background-image: url(/src/images/Ellipse\ 18.png);
+}
+.people3::before{
+    content: '';
+    background-image: url(/src/images/Ellipse\ 19.png);
+}
