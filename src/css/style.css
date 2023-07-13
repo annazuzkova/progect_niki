@@ -7,7 +7,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    /* gap: 73px; */
     padding: 16px 165px 17px 168px;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 73px;
+}
+.header-logo{
+    padding-right: 79px;
 }
 .nav-list{
     display: flex;
@@ -34,21 +45,28 @@
 }
 .home-title{
     font-size: 144px;
-    font-weight: 400;
 }
 .home-title::before{
-    content: '';
+     content: '';
+    background-image: url(/src/images/С&R.svg);
     display: flex;
     width: 178px;
     height: 86px;
-    background-image: url(/src/images/С&R.svg);
     background-repeat: no-repeat;
-    background-image: url(/src/images/logo.png);
+    background-position: center;
 }
 .home-title2{
     font-size: 72px;
-    font-weight: 400;
     margin-bottom: 12px;
+}
+.home-titles::before{
+    content: '';
+    display: flex;
+    width: 160px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-image: url(/src/images/logo.png);
+    background-size: contain;
 }
 .home-text{
     font-size: 18px;
@@ -58,21 +76,20 @@
     margin-bottom: 61px;
 }
 .btn{
-    display: flex;
     padding: 20px 61px 20px 61px;
-    width: 254px;
     border-radius: 10px;
     background-color: #8E32C6;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 /* друга секція */
 .advantages{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: radial-gradient(circle, at bottom right ,rgb(129,48,185), rgb(2,22,53));
     padding: 105px 165px;
+    background: radial-gradient(circle at left top, rgb(129,48,185), rgb(2,22,53)), radial-gradient(circle at right bottom, rgb(129,48,185), rgb(1,165,198));
+    border-bottom: #FFF solid 2px;
+    border-top: #FFF solid 2px;
 }
 .advantages-container{
     display: flex;
@@ -85,24 +102,17 @@
 .card-adv{
     font-size: 36px;
     text-align: center;
+    padding: 25px 50px 19px 50px;
 }
 .photo-card{
     width: 240px;
     height: 240px;
 }
-.advantages-container:nth-child(1){
-    margin-left: 50px;
-}
-.advantages-container:nth-child(3){
-    margin-right: 50px;
-}
+
 /* третя секція */
 .reviews{
     background-color: #012D63;
     /* height: 520px; */
-    border: solid;
-    border-width: 2px;
-    border-color: #FFF;
     padding: 24px 245px 114px 244px;
 }
 .reviews-container{
@@ -180,8 +190,8 @@
     content: '';
     background-image: url(/src/images/Ellipse\ 19.png);
 }
-/* 4 */
-.order{
+/* 4 */ 
+ .order{
     background-image: url(/src/images/Group\ 2\ 1.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -226,15 +236,14 @@
     gap: 20px;
     align-items: center;
 }
-.forms{    
+.forms{   
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 20px; 
 }
 .order-container{
     display: flex;
     flex-direction: column;
-    padding: 20px 375px 37px 375px;
     justify-content: center;
     align-items: center;
     gap: 33px;
@@ -247,13 +256,12 @@
 /* footer */
 .footer{
     background-color: #021635;
-}
-.footer-container{
     padding: 45px 164px 50px 165px;
 }
 .footer-section1{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 20px;
 }
 .footer-section-container1{
     display: flex;
@@ -264,8 +272,8 @@
     flex-direction: column;
     text-decoration-line: underline;
 }
-.footer-section1::after{
-    content: '';
-    height: 1px;
-    color: #FFF;
+.footer-section-container3{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px
 }
