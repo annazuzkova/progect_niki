@@ -82,32 +82,28 @@
     text-align: center;
 }
 .advantages{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 105px 165px;
     background-color: rgb(2, 22, 53);
     background-image: radial-gradient(
       circle at left top,
-      rgb(129, 48, 185) 15%,
-      rgba(2, 22, 53, 0) 35% 35%
+      rgb(129, 48, 185) 1px,
+      rgba(2, 22, 53, 0) 30%
     ),
     radial-gradient(
       circle at right bottom,
-      rgb(1, 165 ,198) 15%,
-      rgba(2, 22, 53, 0) 35% 35%
+      rgb(1, 165 ,198) 1px,
+      rgba(2, 22, 53, 0) 30%
     );
-    border-bottom: #FFF solid 2px;
-    border-top: #FFF solid 2px;
 }
 .advantages-container{
+    max-width: 1110px;
+    margin: 0 auto;
     display: flex;
-    gap: 145px;
+    /* gap: 145px; */
     flex-direction: row; 
     border: solid;
     border-color: #8E32C6;
     border-width: 5px;
-    margin: 0 auto;
 }
 .card-adv{
     font-size: 36px;
@@ -124,6 +120,8 @@
     background: url(/src/images/flovers.png), radial-gradient(circle at right bottom,rgb(1,165,198)1px,rgb(2, 22, 53)  30%);
     background-repeat: no-repeat;
     background-position: left bottom;
+    border-bottom: #FFF solid 2px;
+    border-top: #FFF solid 2px;
 }
 .reviews-container{
     display: flex;
@@ -218,6 +216,7 @@
     border-radius: 50px;
     background: #FFF;
     padding: 11px 417px 11px 24px;
+    font-size: 24px;
 }
 .order-container{
     display: flex;
