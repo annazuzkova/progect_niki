@@ -15,7 +15,7 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <img class="header-logo" src="/src/images/logo.png" alt="Nike" />
+        <img class="header-logo" src="/src/images/logo.svg" alt="Nike" />
         <ul class="nav-list">
           <li>Main page</li>
           <li>Benefits</li>
@@ -52,15 +52,15 @@
         <div class="advantages-container">
           <div class="card-adv">
             <h4 class="card-title">Premium Quality</h4>
-            <img class="photo-card" src="/src/images/Звёзды 1.png" alt="звезди">
+            <img class="photo-card" src="/src/images/stars.png" alt="звезди">
           </div>
           <div class="card-adv card-adv-center">
-            <img class="photo-card" src="/src/images/Краски 1.png" alt="балон с краской">
+            <img class="photo-card" src="/src/images/color.png" alt="балон с краской">
             <h4 class="card-title">Indelible paint</h4>
           </div>
           <div class="card-adv">
             <h4 class="card-title">Fast shipping</h4>
-            <img class="photo-card" src="/src/images/Грузан 1.png" alt="грузовик">
+            <img class="photo-card" src="/src/images/car.png" alt="грузовик">
           </div>
         </div>
       </section>
@@ -76,10 +76,11 @@
                 worn off in a year.</p>
                 <span class="rev-date">25.11</span>
                 <div class="people people1">
-                   <span class="">
-                  <h6 class="name">John Teylor</h6>
-                  <p class="with_us">With us from 2018</p>
-                </span>
+                  <img src="/src/images/foto.png" alt="people" class="foto_people">
+                  <div> 
+                    <h6 class="name">John Teylor</h6>
+                    <p class="with_us">With us from 2018</p>
+                  </div>
                 </div> 
             </div>
             <div class="card-rev card-rev-2">
@@ -87,10 +88,11 @@
                 They match all my clothes.</p>
                 <span class="rev-date">05.01</span>
                 <div class="people people2">
-                  <span>
-                  <h6 class="name">Elizabeth Garsia</h6>
-                  <p class="with_us">With us from 2020</p>
-                  </span>
+                  <img src="/src/images/foto1.png" alt="people" class="foto_people">
+                  <div>
+                    <h6 class="name">Elizabeth Garsia</h6>
+                    <p class="with_us">With us from 2020</p>
+                  </div>
                 </div>
             </div>
             <div class="card-rev card-rev-3">
@@ -98,31 +100,34 @@
                 I use them actively, the paint is super.</p>
                 <span class="rev-date">18.06</span>
                 <div class="people people3">
-                  <span>
-                  <h6 class="name">Tom Maquare</h6>
-                  <p class="with_us">With us from 2019</p>
-                  </span>
+                  <img src="/src/images/foto2.png" alt="people" class="foto_people">
+                  <div>
+                    <h6 class="name">Tom Maquare</h6>
+                    <p class="with_us">With us from 2019</p>
+                  </div>
                 </div>
             </div>
-          </div>
           </div>
         </div>
       </section>
       <section class="order">
         <div class="order-container">
           <h3 class="order-title">Order</h3>
-          <div class="all_forms">
-          <div class="form1">
-              <form class="form2"><input class="input1" placeholder="Write your email"><input class="input1 input2" placeholder="Confirm "></form>
+          <form class="all_forms">
+          <div class="form_box">
+            <div class="form1">
+              <input type="text" class="input1" placeholder="Write your email">
+              <button class="form_btn">Confirm</button>
+            </div>
           </div>
-          <div class="forms">
-            <form class="form"><input class="input" placeholder="Your Country"></form>
-            <form class="form"><input class="input" placeholder="Your City"></form>
-            <form class="form"><input class="input" placeholder="Your Adress"></form>
-          </div>
+            <div class="forms">
+              <input class="form" placeholder="Your Country">
+              <input class="form" placeholder="Your City">
+              <input class="form" placeholder="Your Adress">
+            </div>
+          </form>
           <a class="order-btn" href="#">Order my Nike</a>
           </div> 
-        </div>
       </section>
     </main>
     <footer class="footer">
@@ -147,7 +152,7 @@
             <span class="us">United States</span>
           </div>
           <div class="footer-links">
-            <a href="#"><img src="/src/images/logo.png" alt="logo" class="footer-links-logo"></a>
+            <a href="#"><img src="/src/images/logo.svg" alt="logo" class="footer-links-logo"></a>
             <a href="#"><img src="/src/images/С&R.svg" alt="logo" class="footer-links-cr"></a>
           </div>
         </section>

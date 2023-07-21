@@ -19,3 +19,8 @@ h6{
     font-size: inherit;
     font-weight: inherit;
 }
+input,
+button{
+    border: none;
+    outline: none;
+}

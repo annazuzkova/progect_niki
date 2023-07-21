@@ -1,4 +1,3 @@
-/* стилі хедеру */
 .header{
     background-color:  #012D63;;
     color: #C7C7C7;
@@ -7,8 +6,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    /* gap: 73px; */
-    padding: 16px 165px 17px 168px;
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 .header-container{
     display: flex;
@@ -16,6 +15,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 73px;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 .header-logo{
     padding-right: 79px;
@@ -33,9 +34,8 @@
 .nav-languich a:hover{
     color:#FFFFFF ;
 }
-/* main */
 .home{
-    background-image: url(/src/images/cross.png);
+    background-image: url(/src/images/cross.jpg);
     background-size: cover;
     padding: 94px 644px 183px 164px;
 }
@@ -65,7 +65,7 @@
     width: 160px;
     height: 120px;
     background-repeat: no-repeat;
-    background-image: url(/src/images/logo.png);
+    background-image: url(/src/images/logo.svg);
     background-size: contain;
 }
 .home-text{
@@ -81,15 +81,22 @@
     background-color: #8E32C6;
     text-align: center;
 }
-/* друга секція */
 .advantages{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 105px 165px;
-    /* background-image: radial-gradient(circle at right bottom, rgb(2,22,53)),rgb(1,165,198);
-    background-image: radial-gradient(circle at left top, rgb(129,48,185)10px, rgb(2,22,53)99%); */
-    background: radial-gradient(circle at left top, rgb(129,48,185)1px , rgb(2,22,53)30%),radial-gradient(circle at right bottom,rgb(2,22,53),rgb(1,165,198));
+    background-color: rgb(2, 22, 53);
+    background-image: radial-gradient(
+      circle at left top,
+      rgb(129, 48, 185) 15%,
+      rgba(2, 22, 53, 0) 35% 35%
+    ),
+    radial-gradient(
+      circle at right bottom,
+      rgb(1, 165 ,198) 15%,
+      rgba(2, 22, 53, 0) 35% 35%
+    );
     border-bottom: #FFF solid 2px;
     border-top: #FFF solid 2px;
 }
@@ -100,6 +107,7 @@
     border: solid;
     border-color: #8E32C6;
     border-width: 5px;
+    margin: 0 auto;
 }
 .card-adv{
     font-size: 36px;
@@ -110,12 +118,12 @@
     width: 240px;
     height: 240px;
 }
-/* третя секція */
 .reviews{
-    /* height: 520px; */
     padding: 24px 245px 114px 244px;
-    background: radial-gradient(circle at right bottom,rgb(1,165,198)1px, rgb(2,22,53)30%),url(/src/images/цветы\ 2\ 1.png);
+    background-color: rgb(2, 22, 53);
+    background: url(/src/images/flovers.png), radial-gradient(circle at right bottom,rgb(1,165,198)1px,rgb(2, 22, 53)  30%);
     background-repeat: no-repeat;
+    background-position: left bottom;
 }
 .reviews-container{
     display: flex;
@@ -131,10 +139,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     border-radius: 15px;
-    /* width: 255px;
-    height: 292px; */
     padding: 49px 14px 29px 14px;
 }
 .card-rev-1{
@@ -169,32 +174,10 @@
 .people{
     display: flex;
     flex-direction: row;
+    gap: 5px;
 }
-.people::before{
-    content: '';
-    display: block;
-    width: 31px;
-    height: 31px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-right: 5px;
-}
-.people1::before{
-    content: '';
-    background-image: url(/src/images/Ellipse\ 17.png);
-}
-.people2::before{
-    content: '';
-    background-image: url(/src/images/Ellipse\ 18.png);
-}
-.people3::before{
-    content: '';
-    background-image: url(/src/images/Ellipse\ 19.png);
-}
-/* 4 */ 
  .order{
-    background-image: url(/src/images/Group\ 2\ 1.png);
+    background-image: url(/src/images/fon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px 375px 37px 375px;
@@ -202,46 +185,39 @@
     justify-content: center;
     align-items: center;
 }
-.input1{
-    border: none;
-    outline: none;
-    padding: 0; 
-    font-size: 28px;
-    color: #959595;
-}
-
-.form2{
-    display: flex;
-    justify-content: space-between;
-    background-color: #FFF;
-    border-radius: 50px;
-    padding: 12px 78px 12px 25px;  
-}
-.input2{
-    text-align: end;
-}
-.form{
-    border-radius: 50px;
-    background: #FFF;
-    color: #959595;
-    padding: 11px 417px 11px 24px;
-}
-.input{
-    border: none;
-    outline: none;
-    padding: 0;
-    color: #959595;  
-}
 .all_forms{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: center;
 }
-.forms{   
+.form_box{
+    padding: 0px 375px;
+}
+.form1{
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 78px 12px 25px;
+}
+.input1{
+    font-size: 28px;
+}
+.form_btn{
+    background-color: #FFF;
+    font-size: 28px;
+    color: #8D8D8D;
+}
+.forms{
     display: flex;
     flex-direction: column;
     gap: 20px; 
+    padding: 0px 430px;
+}
+.form{
+    border-radius: 50px;
+    background: #FFF;
+    padding: 11px 417px 11px 24px;
 }
 .order-container{
     display: flex;
@@ -254,8 +230,8 @@
     border-radius: 16px;
     background: #8E32C6;
     padding: 20px 49px;
+    margin-bottom: 17px;
 }
-/* footer */
 .footer{
     background-color: #021635;
     padding: 45px 164px 50px 165px;
