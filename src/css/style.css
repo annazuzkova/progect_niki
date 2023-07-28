@@ -6,8 +6,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding: 16px 0;
 }
 .header-container{
     display: flex;
@@ -15,7 +14,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 73px;
-    max-width: 1110px;
     margin: 0 auto;
 }
 .header-logo{
@@ -37,18 +35,20 @@
 .home{
     background-image: url(/src/images/cross.jpg);
     background-size: cover;
-    padding: 94px 644px 183px 164px;
+    padding: 94px 0 183px 0;
 }
 .home-container{
     display: flex;
     flex-direction: column;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 .home-title{
     font-size: 144px;
 }
 .home-title::before{
      content: '';
-    background-image: url(/src/images/С&R.svg);
+    background-image: url(/src/images/cr.svg);
     display: flex;
     width: 178px;
     height: 86px;
@@ -71,7 +71,7 @@
 .home-text{
     font-size: 18px;
     font-weight: 400;
-    width: 508px;
+    max-width: 508px;
     height: 84px;
     margin-bottom: 61px;
 }
@@ -82,7 +82,7 @@
     text-align: center;
 }
 .advantages{
-    padding: 105px 165px;
+    padding: 105px 0;
     background-color: rgb(2, 22, 53);
     background-image: radial-gradient(
       circle at left top,
@@ -96,38 +96,54 @@
     );
 }
 .advantages-container{
+    padding: 25px 50px;
     max-width: 1110px;
     margin: 0 auto;
     display: flex;
-    /* gap: 145px; */
-    flex-direction: row; 
+    justify-content: space-between;
     border: solid;
     border-color: #8E32C6;
     border-width: 5px;
 }
 .card-adv{
     font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card-adv1{
+    padding-right: 50px;
+    border-right: solid 1px #FFF;
+}
+.card-adv3{
+    padding-left: 50px;
+    border-left: solid 1px #FFF;
+}
+.card-title{
     text-align: center;
-    padding: 25px 50px 19px 50px;
+    max-width: 159px;
 }
 .photo-card{
     width: 240px;
     height: 240px;
 }
 .reviews{
-    padding: 24px 245px 114px 244px;
     background-color: rgb(2, 22, 53);
     background: url(/src/images/flovers.png), radial-gradient(circle at right bottom,rgb(1,165,198)1px,rgb(2, 22, 53)  30%);
     background-repeat: no-repeat;
     background-position: left bottom;
     border-bottom: #FFF solid 2px;
     border-top: #FFF solid 2px;
+    padding: 25px 0 115px 0;
 }
 .reviews-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 .reviews-cards{
     display: flex;
@@ -174,28 +190,40 @@
     flex-direction: row;
     gap: 5px;
 }
+.foto_people{
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+}
  .order{
     background-image: url(/src/images/fon.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 20px 375px 37px 375px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 0 37px 0;
+}
+.order-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1110px;
+    margin: 0 auto;
 }
 .all_forms{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.form_box{
-    padding: 0px 375px;
-}
 .form1{
     border-radius: 50px;
     background: #FFF;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
     padding: 12px 78px 12px 25px;
 }
 .input1{
@@ -209,8 +237,9 @@
 .forms{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px; 
-    padding: 0px 430px;
+    padding: 0 55px;
 }
 .form{
     border-radius: 50px;
@@ -218,22 +247,21 @@
     padding: 11px 417px 11px 24px;
     font-size: 24px;
 }
-.order-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 33px;
-}
 .order-btn{
+    display: inline-block;
     border-radius: 16px;
     background: #8E32C6;
     padding: 20px 49px;
-    margin-bottom: 17px;
+    color: #FFF;
+    font-size: 24px;
 }
 .footer{
     background-color: #021635;
-    padding: 45px 164px 50px 165px;
+    padding: 50px 0;
+}
+.footer-container{
+    max-width: 1110px;
+    margin: 0 auto;
 }
 .footer-section1{
     display: flex;
@@ -249,11 +277,6 @@
     flex-direction: column;
     text-decoration-line: underline;
 }
-.footer-section-container3{
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-}
 .footer-section::after{
     content: '';
     display: block;
@@ -261,16 +284,18 @@
     height: 1px;
     margin-bottom: 24px;
 }
-.our_link{
-    display: flex;
-    justify-content: space-between;
+.footer-logo::after{
+    content: '';
+    display: block;
+    background-image: url(/src/images/cr.svg);
+    background-repeat: no-repeat;
+    height: 24px;
+    background-size: contain;
 }
 .footer-section2{
     display: flex;
     justify-content: space-between;
 }
-.footer-links{
-    display: flex;
-    flex-direction: column;
-    height: 105px;
+.footer-link1{
+    font-size: 18px;
 }
