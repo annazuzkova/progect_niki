@@ -1,0 +1,34 @@
+.header{
+    background-color:  #012D63;;
+    color: #C7C7C7;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 73px;
+    margin: 0 auto;
+}
+.header-logo{
+    padding-right: 79px;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    gap: 29px;
+}
+.nav-list li:hover{
+    font-weight: 400;
+    color: #FFF;
+    
+}
+.nav-languich a:hover{
+    color:#FFFFFF ;
+} 
